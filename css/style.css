@@ -2,6 +2,7 @@
 
 :root {
     --blanco: #FFFFFF;
+    --gris: #808080;
 }
 
 html{
@@ -30,6 +31,10 @@ p{
     font-size: 2rem;
 }
 
+a{
+    text-decoration: none;
+}
+
 /*header*/
 
 header{
@@ -38,27 +43,40 @@ header{
     background-position: center;
     height: 60rem;
     background-size: cover;
+    
 }
 
 .header{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     justify-items: center;
+
 }
 
 .header_titulo{
     color: var(--blanco);
 }
 
+.header_main{
+    height: 60rem;
+    background-color: rgba(0, 0, 0, 0.52);
+}
+
 .nav{
     display: flex;
     align-items:center;
+    
 }
 
 .nav_ul{
     display: flex;
     flex-direction: row;
     gap: 2rem;
+    
+}
+
+.nav_ul :hover{
+    color: var(--gris);
 }
 
 .nav_ul li p{
@@ -79,6 +97,10 @@ header{
 
 .presentacion_titulo{
     font-weight: bold;
+}
+
+header .presentacion{
+    margin-top: 15rem;
 }
 
 /*main*/
