@@ -35,15 +35,24 @@ a{
     text-decoration: none;
 }
 
+img{
+    max-width: 100%;
+    max-height: auto;
+}
+
+button{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
 /*header*/
 
 header{
     background-image: url(../img/img_header.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    height: 60rem;
     background-size: cover;
-    
+    width: 100%;
 }
 
 .header{
@@ -87,6 +96,12 @@ header{
     cursor: pointer;
 }
 
+/* @media screen and(min-width: 480px){
+    .nav_ul{
+        flex-direction: column !important; 
+    }
+} */
+
 .presentacion{
     display: flex;
     flex-direction: column;
@@ -105,19 +120,54 @@ header .presentacion{
 
 /*main*/
 
-.main{
+.container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     justify-items: center;
     padding: 4rem 0;
+    margin: 0 20rem;
 }
 
-.main_nuestroscursos{
+.nuestroscursos{
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+}
+
+.nuestroblog, 
+.nuestroscursos,
+.nuestroscursos_subtitulo--1 h2{
+    font-weight: bold;
+}
+
+.nuestroblog{
     display: flex;
     flex-direction: column;
     row-gap: 6rem;
+    width: 600px;
 }
 
-.main_nuestroblog, .main_nuestroscursos h2{
-    font-weight: bold;
+.nuestroblog_img{
+    width: 50%;
+    height: 100%;
+}
+
+.nuestroscursos_subtitulo--1{
+    row-gap: 5rem;
+}
+
+.nuestroscursos_subtitulo--1_informacion ul{
+    margin: 5rem 0;
+}
+
+.nuestroscursos_subtitulo--1_informacion ul li{
+    margin: 5rem 0;
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
 }
