@@ -141,14 +141,23 @@ header .presentacion{
 .container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
     justify-items: center;
     padding: 4rem 0;
-    margin: 0 20rem;
+    margin: 0 10rem;
+}
+
+.nuestroblog_titulo{
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.nuestrocursos_titulo{
+    grid-row-start: -3;
+    grid-row-end: -2;
 }
 
 .nuestroscursos{
-    display: flex;
-    flex-direction: column;
     row-gap: 4rem;
 }
 
@@ -159,21 +168,19 @@ header .presentacion{
 }
 
 .nuestroblog{
-    display: flex;
-    flex-direction: column;
     row-gap: 6rem;
-    width: 600px;
 }
 
 .nuestroblog_img{
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .nuestroscursos_subtitulo--1{
     row-gap: 5rem;
 }
 
+.nuestroblog_img, 
 .nuestroscursos_subtitulo--1_informacion ul{
     margin: 5rem 0;
 }
