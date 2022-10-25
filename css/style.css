@@ -55,15 +55,23 @@ header{
     width: 100%;
 }
 
+.header_titulo, .nav{
+    margin-top: 3rem;
+}
+
 .header{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     justify-items: center;
-
 }
 
 .header_titulo{
     color: var(--blanco);
+}
+
+.header_titulo h1:after {
+    content:"DeCafé";
+    font-weight: bold;
 }
 
 .header_main{
@@ -96,11 +104,21 @@ header{
     cursor: pointer;
 }
 
-/* @media screen and(min-width: 480px){
-    .nav_ul{
+@media (max-width: 768px){
+    .nav_ul {
         flex-direction: column !important; 
+        margin-left: 4rem;
     }
-} */
+    .presentacion{
+        text-align: center;
+    }
+    .presentacion h2{
+        font-size: 2.5rem;
+    }
+    .presentacion p{
+        font-size: 2rem;
+    }
+}
 
 .presentacion{
     display: flex;
@@ -164,7 +182,7 @@ header .presentacion{
     margin: 5rem 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
     .container{
         display: flex;
         flex-direction: column;
