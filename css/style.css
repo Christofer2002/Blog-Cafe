@@ -3,6 +3,8 @@
 :root {
     --blanco: #FFFFFF;
     --gris: #808080;
+    --brown: #A0522D;
+    --brownLight: #be911d;
 }
 
 html{
@@ -140,53 +142,40 @@ header .presentacion{
 
 .container{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
-    justify-items: center;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(2,auto);
     padding: 4rem 0;
     margin: 0 10rem;
+    gap: 7rem;
 }
 
 .nuestroblog_titulo{
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-column: 1/2;
+    width: auto;
 }
 
-.nuestrocursos_titulo{
-    grid-row-start: -3;
-    grid-row-end: -2;
+.nuestroscursos_titulo{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    text-align: left;
 }
 
-.nuestroscursos{
-    row-gap: 4rem;
-}
-
-.nuestroblog, 
-.nuestroscursos,
-.nuestroscursos_subtitulo--1 h2{
+.nuestroblog_titulo, 
+.nuestroscursos_titulo,
+.nuestroscursos_subtitulo--1 h3{
     font-weight: bold;
 }
 
-.nuestroblog{
-    row-gap: 6rem;
+.nuestroscursos_subtitulo--1 div, .nuestroscursos_subtitulo--1_informacion ul li{
+    margin-bottom: 4rem;
 }
+
 
 .nuestroblog_img{
     width: 100%;
+    height: 100%;
     object-fit: cover;
-}
-
-.nuestroscursos_subtitulo--1{
-    row-gap: 5rem;
-}
-
-.nuestroblog_img, 
-.nuestroscursos_subtitulo--1_informacion ul{
-    margin: 5rem 0;
-}
-
-.nuestroscursos_subtitulo--1_informacion ul li{
-    margin: 5rem 0;
+    grid-column: 1/2;
 }
 
 @media screen and (max-width: 480px) {
@@ -195,4 +184,17 @@ header .presentacion{
         flex-direction: column;
         margin: 0 auto;
     }
+}
+
+.btn{
+    background-color: var(--brown);
+    padding: 2rem;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: var(--brownLight);
 }
