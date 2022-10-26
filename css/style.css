@@ -193,6 +193,7 @@ header .presentacion{
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
+    color: var(--blanco);
 }
 
 .btn:hover{
