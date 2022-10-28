@@ -75,9 +75,9 @@ header{
     margin-left: 4.5rem;
 }
 
-@media (max-width:480px){
+@media (max-width:620px){
   .header_titulo{
-    margin-left: 0.5rem;
+    margin-left: 1.5rem;
 }
 }
 
@@ -213,14 +213,21 @@ header .presentacion{
     background-color: var(--brown);
     padding: 2rem;
     border: none;
-    font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
     color: var(--blanco);
 }
 
+.btn p{
+  font-size: 1.8rem;
+}
+
 .btn:hover{
     background-color: var(--brownLight);
+}
+
+.btn:hover p{
+  color: var(--blanco);
 }
 
 .nuestroblog_grano-cafe h2{
@@ -247,6 +254,7 @@ header .presentacion{
     -moz-box-shadow: -4px 12px 73px 6px rgba(0,0,0,0.58);
 }
 
+/*Navbar*/
 
 .navbar{
   display: flex;
@@ -259,9 +267,9 @@ details {
     position: relative;
   }
 
-  @media (max-width:480px){
+  @media (max-width:620px){
     details {
-      margin-right: .5rem;
+      margin-right: 2.1rem;
     }
   }
   summary {
@@ -275,6 +283,7 @@ details {
     user-select: none;
     outline: none;
     transition: transform 200ms ease-in-out 0s;
+    margin-left: 1.7rem;
   }
   summary::before,
   summary::after {
