@@ -67,11 +67,12 @@ header{
 .header{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    justify-items: center;
 }
 
 .header_titulo{
     color: var(--blanco);
+    text-align: left;
+    margin-left: 4.5rem;
 }
 
 .header_titulo h1:after {
@@ -136,7 +137,6 @@ header{
 
 .presentacion_titulo{
     font-size: 4rem;
-    font-weight: bold;
 }
 
 .presentacion_titulo h2{
@@ -173,10 +173,11 @@ header .presentacion{
     text-align: left;
 }
 
-.nuestroblog_titulo, 
-.nuestroscursos_titulo,
+.nuestroblog_titulo h2, 
+.nuestroscursos_titulo h2,
 .nuestroscursos_subtitulo--1 h3,
-.nuestroblog_grano-cafe h2{
+.nuestroblog_grano-cafe h2,
+.presentacion_titulo h2{
     font-weight: bold;
 }
 
@@ -241,16 +242,21 @@ header .presentacion{
 }
 
 
-
+.navbar{
+  display: flex;
+  justify-content: end;
+}
 
 details {
-    margin: 40px;
+    margin: 45px 0;
+    margin-right: 5rem;
+    position: relative;
   }
   summary {
     writing-mode: vertical-lr;
     text-align: center;
     padding: 12px 10px;
-    width: 35px;
+
     height: 30px;
     border-radius: var(--cornerRad);
     color: var(--secoColor);
@@ -287,14 +293,16 @@ details {
     animation-name: menuAnim;
   }
   details[open] summary::before {
-      font-size: 2.5rem;
-      color: var(--blanco);
+    font-size: 2.5rem;
+    color: var(--blanco);
     content: "X";
   }
   details[open] summary::after {
     content: "";
+    
   }
   .menu {
+    position: absolute;
     height: 0;
     width: fit-content;
     border-radius: var(--cornerRad);
@@ -303,7 +311,6 @@ details {
     margin-top: 8px;
     display: flex;
     flex-direction: column;
-
     overflow: hidden;
     animation: closeMenu 300ms ease-in-out forwards;
   }
@@ -324,6 +331,7 @@ details {
   }
   .menu a:hover {
     filter: brightness(200%);
+    text-decoration: none;
   }
   details::before {
     color: var(--secoColor);
