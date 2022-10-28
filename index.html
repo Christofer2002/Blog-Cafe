@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="preload" href="css/style.css" as="style" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <title>Blog Café</title>
   </head>
   <header>
@@ -18,7 +19,7 @@
         <div class="header_titulo">
           <h1>Blog</h1>
         </div>
-        <div class="nav">
+        <!-- <div class="nav">
           <ul class="nav_ul">
             <li>
               <a href="html/nosotros.html"><p>Nosotros</p></a>
@@ -30,7 +31,19 @@
               <a href="html/contacto.html"><p>Contactanos</p></a>
             </li>
           </ul>
-        </div>
+        </div> -->
+
+        <details>
+          <summary></summary>
+          <nav class="menu">
+            <a href="#link">Home</a>
+            <a href="#link">Work</a>
+            <a href="#link">Links</a>
+            <a href="#link">Contact</a>
+            <a href="#link">About</a>
+          </nav>
+        </details>
+
       </section>
       <section class="presentacion">
         <div class="presentacion_titulo">
@@ -45,7 +58,7 @@
 
   <body>
     <div class="main">
-      <section class="container">
+      <section class="contenedor">
         <div class="nuestroblog_titulo"><h2>Nuestro Blog</h2></div>
         <div class="nuestroblog_img"><img loading="lazy" src="img/foto_cafe.jpg" alt="imagen de cafe" />
         <div class="nuestroblog_grano-cafe">
@@ -81,5 +94,6 @@
         </div>
       </section>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>
