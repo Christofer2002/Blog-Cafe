@@ -75,6 +75,12 @@ header{
     margin-left: 4.5rem;
 }
 
+@media (max-width:480px){
+  .header_titulo{
+    margin-left: 0.5rem;
+}
+}
+
 .header_titulo h1:after {
     content:"DeCafé";
     font-weight: bold;
@@ -252,11 +258,16 @@ details {
     margin-right: 5rem;
     position: relative;
   }
+
+  @media (max-width:480px){
+    details {
+      margin-right: .5rem;
+    }
+  }
   summary {
     writing-mode: vertical-lr;
     text-align: center;
     padding: 12px 10px;
-
     height: 30px;
     border-radius: var(--cornerRad);
     color: var(--secoColor);
